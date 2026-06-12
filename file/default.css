@@ -28,10 +28,9 @@ a {
     width: 90%;
     max-width: 272px;
     height: auto;
-}
-  left: 188px;
-  top: 80px;
-  position: absolute;
+    left: 30px;
+    top: 180px;
+    position: absolute;
 }
 #code {
   display: none;
@@ -60,9 +59,8 @@ a {
   font-size: 64px;
 }
 #canvas {
-  margin: 0 auto;
-  width: 1100px;
-  height: 680px;
+    width: 100%;
+    height: auto;
 }
 #error {
   margin: 0 auto;
@@ -85,7 +83,7 @@ a {
 
     #text {
         left: 20px !important;
-        top: 20px !important;
+        top: 220px !important;
         width: 90% !important;
     }
 }
