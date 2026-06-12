@@ -3,6 +3,9 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>HBD love</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>HBD love</title>	    
     <link type="text/css" rel="stylesheet" href="./file/default.css">
     <script type="text/javascript" src="./file/jquery.min.js"></script>
@@ -21,6 +24,29 @@
         }
     </script>
 </head>
+	<style>
+.heart{
+position:fixed;
+top:-10px;
+font-size:20px;
+animation:fall 5s linear infinite;
+}
+@keyframes fall{
+0%{transform:translateY(-10px);}
+100%{transform:translateY(100vh);}
+}
+</style>
+
+<script>
+setInterval(()=>{
+let h=document.createElement("div");
+h.innerHTML="❤️";
+h.className="heart";
+h.style.left=Math.random()*100+"vw";
+document.body.appendChild(h);
+setTimeout(()=>h.remove(),5000);
+},500);
+</script>
 <body>
     <div id="main">
         <div id="error"><a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a> (<a href="http://firefox.com.cn/download/">Firefox</a>)</div>
@@ -41,6 +67,16 @@
                 </div>
             </div>
             <div id="clock-box">
+				<br><br>
+<button onclick="showMessage()" style="padding:10px 20px;font-size:18px;border-radius:10px;">
+🎁 Click For Surprise
+</button>
+
+<script>
+function showMessage() {
+    alert("Happy Birthday My Love ❤️\nYou are the best thing that ever happened to me!");
+}
+</script>
                 <span id="clock">577 days 0 hours 0 minutes 0 seconds</span> <!-- Change to "6940 days..." if needed -->
             </div>
             <canvas id="canvas"></canvas>
