@@ -33,7 +33,7 @@ a {
     z-index: 999;
 }
 #code {
-    display: block;
+    display: none;
   color: white;
     text-shadow: 2px 2px 8px black;
   font-size: 16px;
